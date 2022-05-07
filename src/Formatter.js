@@ -13,7 +13,7 @@ function FormatSubject(result) {
                         </div>
 
                         <div className="imageblock border">
-                            <img className="subject-image" src={subjectFile.image} alt="Subject Image" />
+                            <img className="subject-image" src={subjectFile.image} alt="Subject File" />
                         </div>
 
                         <div className="textblock border">
