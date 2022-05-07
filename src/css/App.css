@@ -25,9 +25,13 @@
 @font-face {
     font-family: "ITC Bauhaus Demi";
 
-    src: url("..\\fonts/itc-bauhaus-demi.woff2") format('woff2'),
+    /*src: url("..\\fonts/itc-bauhaus-demi.woff2") format('woff2'),
         url("..\\fonts/itc-bauhaus-demi.woff") format('woff'),
-        url("..\\fonts/itc-bauhaus-demi.ttf") format('truetype');
+        url("..\\fonts/itc-bauhaus-demi.ttf") format('truetype');*/
+
+    src: url("https://github.com/CodieShannon/assignment_2_level_6_test/blob/master/src/fonts/itc-bauhaus-demi.woff2?raw=true") format('woff2'),
+        url("https://github.com/CodieShannon/assignment_2_level_6_test/blob/master/src/fonts/itc-bauhaus-demi.woff?raw=true") format('woff'),
+        url("https://github.com/CodieShannon/assignment_2_level_6_test/blob/master/src/fonts/itc-bauhaus-demi.ttf?raw=true") format('truetype');
 
     font-display: swap;
 }
