@@ -15,10 +15,10 @@ function Nav() {
     return (
         <div>
             <nav>
-                <picture className="nav-logo">
+                <div className="nav-logo">
                     <source srcSet="images/logo.webp" type="image/webp" />
                     <img src="images/logo.png" alt="SCP Foundation Logo" />
-                </picture>
+                </div>
 
                 <div className="nav-elms">
                     <button id="hamburger-btn" className={isHamburgerMenu ? "nav-btn hamburger-btn-toggle" : "nav-btn" } type="button" onClick={ () => setHamburgerMenu(!isHamburgerMenu)}>
