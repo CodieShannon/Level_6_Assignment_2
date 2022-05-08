@@ -37,7 +37,7 @@ function Nav() {
                 </div>
             </nav>
 
-            <section className={isHamburgerMenu ? "hamburger overlay hamburger-overlay-toggle" : "hamburger-overlay"}> </section>
+            <section className={isHamburgerMenu ? "hamburger-overlay hamburger-overlay-toggle" : "hamburger-overlay" }> </section>
 
             <aside className={isHamburgerMenu ? "hamburger-wrapper hamburger-wrapper-toggle" : "hamburger-wrapper" }>
                 <h3 className="hamburger-title">Subject Files</h3>
