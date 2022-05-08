@@ -9,7 +9,7 @@ function FormatSubject(result) {
                     <div key={subjectFile.id} className="container">
                         <div className="headerblock border">
                             <h1>Item #: {subjectFile.item}</h1>
-                            <h2>Object Class:{subjectFile.class}</h2>
+                            <h2>Object Class: {subjectFile.class}</h2>
                         </div>
 
                         <div className="imageblock border">
