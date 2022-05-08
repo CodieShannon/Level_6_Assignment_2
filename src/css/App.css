@@ -29,9 +29,9 @@
         url("..\\fonts/itc-bauhaus-demi.woff") format('woff'),
         url("..\\fonts/itc-bauhaus-demi.ttf") format('truetype');*/
 
-    src: url("..\\fonts/itc-bauhaus-demi.woff2") format('woff2'),
-        url("..\\fonts/itc-bauhaus-demi.woff") format('woff'),
-        url("..\\fonts/itc-bauhaus-demi.ttf") format('truetype');
+    src: url("fonts/itc-bauhaus-demi.woff2") format('woff2'),
+        url("fonts/itc-bauhaus-demi.woff") format('woff'),
+        url("fonts/itc-bauhaus-demi.ttf") format('truetype');
 
     font-display: swap;
 }
