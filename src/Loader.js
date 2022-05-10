@@ -1,48 +1,48 @@
-//Import React useEffect and useState
+// Import React useEffect and useState
 import { useEffect, useState } from 'react';
 
-//Import Formatter
-import FormatSubject from './Formatter';
+// Import FormatSubject
+import FormatSubject from './FormatSubject';
 
-function SCP_529() {
-    let index = 8;
-
+// Functions
+function Loader({id}) {
     function fetchSCP()
     {
-        //Create Variables
+        // Create Variables
         var data = null;
         var xhr = new XMLHttpRequest();
 
-        //Set Credentials Requirement to False
+        // Set Credentials Requirement to False
         xhr.withCredentials = false;
         
-        //Get Data From Database
+        // Get Data From Database
         xhr.addEventListener("readystatechange", function () {
             if (this.readyState === 4)
                 setState(JSON.parse(this.responseText));
         });
 
-        //Configure XHR (XML HTTP Request)
+        // Configure XHR (XML HTTP Request)
         xhr.open("GET", "https://scpfoundationdb-ef73.restdb.io/rest/subject-files");
         xhr.setRequestHeader("content-type", "application/json");
         xhr.setRequestHeader("x-apikey", "6270a864fcf9897eb111a0e1");
         xhr.setRequestHeader("cache-control", "no-cache");
         
-        //Send XHR (XML HTTP Request)
+        // Send XHR (XML HTTP Request)
         xhr.send(data);
     }
 
-    //Create a state using useState
+    // Create a State using useState
     const [currentState, setState] = useState([]);
 
-    //Utilize react useEffect to run fetchSCP function
+    // Utilize React useEffect to Run fetchSCP Function
     useEffect(() => { fetchSCP(); }, [currentState] );
 
-    //Get subject file
-    let result = currentState.filter(i => i.id === index);
+    // Get Subject File
+    let result = currentState.filter(i => i.id === id);
 
-    //Format Subject File For HTML
+    // Format Subject File For HTML
     return FormatSubject(result);
 }
 
-export default SCP_529;
+// Export Loader
+export default Loader;

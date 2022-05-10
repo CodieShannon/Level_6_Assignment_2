@@ -1,11 +1,14 @@
 // Import StyleSheet
 import './css/App.css';
 
+// Functions
 function FormatSubject(result) {
+    // Return Formatted HTML Subject File
     return (
         <div className="wrapper">
             {
                 result.map(subjectFile =>
+                    // Body
                     <div key={subjectFile.id} className="container">
                         <div className="headerblock border">
                             <h1>Item #: {subjectFile.item}</h1>
@@ -36,4 +39,5 @@ function FormatSubject(result) {
     );
 }
 
+// Export FormatSubject
 export default FormatSubject;

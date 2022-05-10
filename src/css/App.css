@@ -120,11 +120,10 @@ nav, .nav-elms {
     right: 0;
 
     border-left: 1px solid var(--tertiary);
+
+    transition-duration: 500ms;
     
     background-color: var(--secondary);
-
-    /* Animation (Property, Duration) */
-    transition: width 0.3s;
 }
 
 .hamburger-overlay {
@@ -157,8 +156,25 @@ nav, .nav-elms {
 
 a { text-decoration: none;}
 
-a > li {
+.link {
     color: var(--link);
+
+    background-color: var(--link-bg);
+}
+
+.link-active {
+    color: var(--link-hover) !important;
+
+    border-color: var(--link-bg-highlight) !important;
+
+    transition-duration: 500ms;
+
+    background-color: var(--link-bg-hover) !important;
+
+    cursor:default;
+}
+
+.link, .link-active {
     font-size: 17px;
 
     border-left: 10px solid transparent;
@@ -166,11 +182,9 @@ a > li {
     padding: 20px;
 
     margin-bottom: 1px;
-
-    background-color: var(--link-bg);
 }
 
-a > li:hover {
+.link:hover {
     color: var(--link-hover) !important;
 
     border-color: var(--link-bg-highlight) !important;
@@ -181,7 +195,7 @@ a > li:hover {
     background-color: var(--link-bg-hover) !important;
 }
 
-a > li:active { background-color: var(--link-bg-pressed) !important; }
+.link:active { background-color: var(--link-bg-pressed) !important; }
 
 /* Search Bar */
 .search-bar {
@@ -328,6 +342,7 @@ a > li:active { background-color: var(--link-bg-pressed) !important; }
     -webkit-overflow-scrolling: touch;
 
     top: 56px;
+
     bottom: 0;
     position: absolute;
 }
