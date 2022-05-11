@@ -38,7 +38,7 @@ function Nav({ LinkState, setLinkState, setSearchVal }) {
                         <input id="search-tb" className="search search-tb" type="search" placeholder="Search Here..." onChange={(event) => { setsearchvalue(event.target.value) }} maxLength={7} />
 
                         {/* Search Bar - Button */} {/* Set searchVal State to searchvalue and Set LinkState to 0 on Button Click */}
-                        <Link className="nav-btn search search-btn" to="/Search" onClick={() => { setSearchVal(searchvalue), setLinkState(0) }}>
+                        <Link className="nav-btn search search-btn" to="/Search" >
                             <span className="fa fa-search"></span><span className="search-txt">&nbsp;&nbsp;Search</span>
                         </Link>
                     </form>
