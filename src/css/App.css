@@ -294,6 +294,16 @@ a { text-decoration: none;}
 
 /* Search Page */
 /* ========================================== */
+/* Message Box */
+.messagebox { margin: 5px 0 0 0; }
+
+.messagebox-content{
+    padding: 25px 0;
+    
+    background-color: var(--secondary);
+}
+
+/* Subject File Block */
 .scpblock {
     margin-top: 5px;
 

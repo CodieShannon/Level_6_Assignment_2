@@ -1,14 +1,13 @@
-// Import React useEffect and useState
+// Import React Hooks
 import { useEffect, useState } from 'react';
 
-// Import FormatSubject
-import FormatSubject from './FormatSubject';
-
 // Functions
-function Loader({id}) {
+function subjectFileDB()
+{
+    // Get Data From Database
     function fetchSCP()
-    {
-        // Create Variables
+    { 
+        // Create Data Variable and XHR (XML HTTP Request) Object
         var data = null;
         var xhr = new XMLHttpRequest();
 
@@ -31,18 +30,14 @@ function Loader({id}) {
         xhr.send(data);
     }
 
-    // Create a State using useState
+    // Create State
     const [currentState, setState] = useState([]);
 
     // Utilize React useEffect to Run fetchSCP Function
     useEffect(() => { fetchSCP(); }, [currentState] );
 
-    // Get Subject File
-    let result = currentState.filter(i => i.id === id);
-
-    // Format Subject File For HTML
-    return FormatSubject(result);
+    // Return currentState
+    return currentState;
 }
 
-// Export Loader
-export default Loader;
+export default subjectFileDB;
