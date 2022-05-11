@@ -19,7 +19,7 @@ function App() {
   // Return Navigation Menu and Routes
   return (
     <Router>
-      <Nav LinkState={LinkState} setLinkState={setLinkState} searchVal={searchVal} setSearchVal={setSearchVal}/>
+      <Nav LinkState={LinkState} setLinkState={setLinkState} setSearchVal={setSearchVal}/>
         <Routes>
           <Route path="/Search" element={<Search setlinkstate={setLinkState} searchVal={searchVal}/>} />
           <Route path="/" element={<SubjectFile id={1} />} />

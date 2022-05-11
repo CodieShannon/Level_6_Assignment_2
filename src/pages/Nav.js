@@ -9,18 +9,13 @@ import HamLink from '../components/hamburger-menu/HamLink';
 import HamOverlay from '../components/hamburger-menu/HamOverlay';
 
 // Functions
-function Nav({ LinkState, setLinkState, searchVal, setSearchVal }) {
+function Nav({ LinkState, setLinkState, setSearchVal }) {
     // Create React States
     const [searchvalue, setsearchvalue] = useState("");
     const [isHamburgerMenu, setHamburgerMenu] = useState(false);
 
     // Disable Hamburger Menu Once HamLink is Clicked
     useEffect(() => { setHamburgerMenu(false); }, [LinkState]);
-
-    function State(){ setLinkState(0); }
-
-    // Set LinkState to 0 for Search Page
-    useEffect(() => { State(0); }, [searchVal])
 
     // Return Navigation Menu, Hamburger Menu, and Search Bar
     return (
@@ -43,7 +38,7 @@ function Nav({ LinkState, setLinkState, searchVal, setSearchVal }) {
                         <input id="search-tb" className="search search-tb" type="search" placeholder="Search Here..." onChange={(event) => { setsearchvalue(event.target.value) }} maxLength={7} />
 
                         {/* Search Bar - Button */} {/* Set searchVal State to searchvalue and Set LinkState to 0 on Button Click */}
-                        <Link className="nav-btn search search-btn" to="/Search" onClick={() => setSearchVal(searchvalue)}>
+                        <Link className="nav-btn search search-btn" to="/Search" onClick={() => {setSearchVal(searchvalue); setLinkState(0)}}>
                             <span className="fa fa-search"></span><span className="search-txt">&nbsp;&nbsp;Search</span>
                         </Link>
                     </form>
