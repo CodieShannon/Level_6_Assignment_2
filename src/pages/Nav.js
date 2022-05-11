@@ -17,10 +17,10 @@ function Nav({ LinkState, setLinkState, searchVal, setSearchVal }) {
     // Disable Hamburger Menu Once HamLink is Clicked
     useEffect(() => { setHamburgerMenu(false); }, [LinkState]);
 
+    function State(){ setLinkState(0); }
+
     // Set LinkState to 0 for Search Page
     useEffect(() => { State(0); }, [searchVal])
-
-    function State(){ setLinkState(0); }
 
     // Return Navigation Menu, Hamburger Menu, and Search Bar
     return (
