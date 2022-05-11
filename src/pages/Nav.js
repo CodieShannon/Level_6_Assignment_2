@@ -18,7 +18,7 @@ function Nav({ LinkState, setLinkState, searchVal, setSearchVal }) {
     useEffect(() => { setHamburgerMenu(false); }, [LinkState]);
 
     // Set LinkState to 0 for Search Page
-    useEffect(() => { setLinkState(0); }, [searchVal])
+    useEffect((setLinkState) => { setLinkState(0); }, [searchVal])
 
     // Return Navigation Menu, Hamburger Menu, and Search Bar
     return (
