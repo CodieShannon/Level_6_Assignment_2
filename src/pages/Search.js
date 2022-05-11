@@ -114,7 +114,7 @@ function FormatResults(setLinkState, currentState, searchVal, results)
     else
     {
         // Check if the currentState's length is equal to 0 or check if searchVal is set and if the searchVal is included within any subjectFile item values
-        if(currentState.length === 0 || searchVal && currentState.some(function(i){ return i.item.toLowerCase().includes(searchVal.toLowerCase());}))
+        if(currentState.length === 0 || currentState.some(function(i){ return i.item.toLowerCase().includes(searchVal.toLowerCase());}))
         {
             // Return Loading MessageBox
             return ( <MessageBox message="Loading..."/> );
