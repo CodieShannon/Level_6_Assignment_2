@@ -70,6 +70,11 @@ function FilterResults(currentState, searchVal)
             // Return Results to Results Constant Variable
             return subjectFile;
         }
+        else
+        {
+            // Return Null
+            return null;
+        }
     });
 
     // Return Search Results
