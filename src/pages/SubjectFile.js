@@ -2,9 +2,9 @@
 import { useEffect, useState } from 'react';
 
 // Import Components
-import Headerblock from '../component/blocks/Headerblock';
-import Imageblock from '../component/blocks/Imageblock';
-import Textblock from '../component/blocks/Textblock';
+import Headerblock from '../components/blocks/Headerblock';
+import Imageblock from '../components/blocks/Imageblock';
+import Textblock from '../components/blocks/Textblock';
 
 // Functions
 function SubjectFile({id})

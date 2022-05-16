@@ -1,7 +1,7 @@
 // Import Pages
-import Nav from "./page/Nav";
-import Search from "./page/Search";
-import SubjectFile from "./page/SubjectFile";
+import Nav from "./pages/Nav";
+import Search from "./pages/Search";
+import SubjectFile from "./pages/SubjectFile";
 
 // Import StyleSheet
 import './css/App.css';
