@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
 
 // Import Components
-import CompanyLogo from '../components/CompanyLogo';
-import HamButton from '../components/hamburger-menu/HamButton';
-import HamLink from '../components/hamburger-menu/HamLink';
-import HamOverlay from '../components/hamburger-menu/HamOverlay';
+import CompanyLogo from '../component/CompanyLogo';
+import HamButton from '../component/hamburger-menu/HamButton';
+import HamLink from '../component/hamburger-menu/HamLink';
+import HamOverlay from '../component/hamburger-menu/HamOverlay';
 
 // Functions
 function Nav({ LinkState, setLinkState, setSearchVal }) {

@@ -2,11 +2,11 @@
 import { useEffect, useState } from 'react';
 
 // Import Components
-import Headerblock from '../components/blocks/Headerblock';
-import Imageblock from '../components/blocks/Imageblock';
-import Textblock from '../components/blocks/Textblock';
-import MessageBox from '../components/search/MessageBox';
-import LinkButton from '../components/search/LinkButton';
+import Headerblock from '../component/blocks/Headerblock';
+import Imageblock from '../component/blocks/Imageblock';
+import Textblock from '../component/blocks/Textblock';
+import MessageBox from '../component/search/MessageBox';
+import LinkButton from '../component/search/LinkButton';
 
 // Functions
 function Search({setLinkState, searchVal})
